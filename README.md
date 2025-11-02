@@ -1,3 +1,24 @@
+## Christina's guide
+
+1. Clone this repo
+
+```
+git clone https://github.com/christinagooo/fitness-pitch-25.git
+```
+
+2. Download dependencies
+
+```
+npm install @mediapipe/tasks-vision
+npm install lucide-react
+```
+
+3. Run locally
+
+```
+npm run dev
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
