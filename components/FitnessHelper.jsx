@@ -146,6 +146,9 @@ export default function FitnessHelper() {
 
     // Clear canvas and draw video frame
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.scale(-1, 1);
+    ctx.translate(-canvas.width, 0);
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
     // Draw landmarks if detected
@@ -167,6 +170,8 @@ export default function FitnessHelper() {
     } else {
       setFeedback("No person detected. Stand in full view.");
     }
+
+    ctx.restore();
 
     // Continue the loop
     animationFrameId.current = requestAnimationFrame(predictWebcam);
